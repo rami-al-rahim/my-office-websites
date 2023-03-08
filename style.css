@@ -60,10 +60,6 @@ header {
     font-size: 1.8em;
 }
 
-.logo a:hover {
-    color: #3e8e41;
-}
-
 .navigation a {
     color: #007bff;
     text-decoration: none;
@@ -72,7 +68,22 @@ header {
     padding-left: 30px;
 }
 
-.navigation a:hover {
+* a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+* a:hover {
+    color: #3e8e41;
+    text-decoration: none;
+}
+
+* a:first-of-type {
+    color: #007bff;
+}
+
+* a:first-of-type:hover {
     color: #3e8e41;
 }
 
@@ -163,4 +174,21 @@ img {
 
 .game-buttons a:first-of-type:hover {
     background-color: #3e8e41;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .navigation {
+        margin-top: 20px;
+    }
+
+    .navigation a {
+        display: block;
+        margin: 10px 0;
+    }
 }
