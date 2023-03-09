@@ -1,9 +1,11 @@
-// Get the button and column elements
-  const button = document.querySelector('.toggle-column');
-  const column = document.querySelector('.column');
+const iconContainers = document.querySelectorAll('.icon-container');
 
-  // Add a click event listener to the button
-  button.addEventListener('click', function() {
-    // Toggle the 'show' class on the column
-    column.classList.toggle('show');
+iconContainers.forEach((container) => {
+  container.addEventListener('mouseenter', () => {
+    container.querySelector('i').classList.add('hover');
   });
+  
+  container.addEventListener('mouseleave', () => {
+    container.querySelector('i').classList.remove('hover');
+  });
+});
