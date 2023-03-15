@@ -173,10 +173,6 @@ p {
         font-size: 1.8em;
     }
 
-    section {
-        padding: 80px 20px;
-    }
-
     .game {
         flex-direction: column;
         align-items: center;
