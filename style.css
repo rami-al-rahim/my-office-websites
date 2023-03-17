@@ -183,11 +183,12 @@ p {
 
 @media (max-width:720px) {
     .game {
-        width: 100%;
+        width: 90%;
         margin-bottom: 20px;
         border: 1px solid #ccc;
         border-radius: 5px;
         overflow: hidden;
+        margin: auto;
     }
 }
 
@@ -282,6 +283,5 @@ input:checked~nav .navbar-toggler .bar:nth-child(3) {
 @media (max-width:300px) {
     body {
         font-size: 10px;
-
     }
 }
