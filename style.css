@@ -230,6 +230,7 @@ p {
 
     .logo {
         text-align: center;
+        margin: auto;
     }
 
 }
