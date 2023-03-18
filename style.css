@@ -233,6 +233,19 @@ p {
         margin: auto;
     }
 
+    .footer {
+        margin-top: 5px;
+        padding: 1em;
+    }
+
+    .footer-title {
+        font-size: 0.65em;
+    }
+
+    .footer .social-icons a {
+        font-size: 0.65em;
+        padding: 0 6px 0 0;
+    }
 }
 
 header .navbar-toggler {
