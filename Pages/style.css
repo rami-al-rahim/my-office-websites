@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap');
+
+* {
+    font-family: 'Changa', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Styling for main section */
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+    z-index: 100;
+}
+
+.logo {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navigation a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 30px;
+}
+
+* a {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+* a:hover {
+    color: #3e8e41;
+    text-decoration: none;
+}
+
+* a:first-of-type {
+    color: #007bff;
+}
+
+* a:first-of-type:hover {
+    color: #3e8e41;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-top: 100px;
+}
+
+main h1 image {
+    size: 12px;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Styling for games section */
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.game {
+    width: 30%;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.game img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.game h2 {
+    font-size: 24px;
+    color: #333;
+    margin: 10px;
+}
+
+.game p {
+    font-size: 16px;
+    color: #555;
+    margin: 10px;
+}
+
+.game-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+}
+
+.game-buttons a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.game-buttons a:hover {
+    background-color: #0062cc;
+}
+
+.game-buttons a:first-of-type {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.game-buttons a:first-of-type:hover {
+    background-color: #3e8e41;
+    color: white;
+}
+
+.footer {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    .game {
+        width: 90%;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+}
+
+@media (max-width: 935px) {
+
+    nav {
+        padding: 0 2rem;
+    }
+
+    nav .nav-list a {
+        padding: 0 20px;
+    }
+
+}
+
+@media (max-width: 675px) {
+
+    nav .nav-list {
+        display: grid;
+        position: absolute;
+        background: #f0f0f0;
+        z-index: -100;
+        width: 100%;
+        top: 75px;
+        left: 0;
+        transform: translateY(-100%);
+        z-index: -1;
+        transition: .6s;
+        visibility: hidden;
+    }
+
+    nav .nav-list a {
+        padding-left: 35px;
+    }
+
+    header .navbar-toggler {
+        display: grid !important;
+    }
+
+    .logo {
+        text-align: center;
+        margin: auto;
+    }
+
+    .footer {
+        margin-top: 5px;
+        padding: 1em;
+    }
+
+    .footer-title {
+        font-size: 0.65em;
+    }
+
+    .footer .social-icons a {
+        font-size: 0.65em;
+        padding: 0 6px 0 0;
+    }
+}
+
+header .navbar-toggler {
+    display: none;
+    height: min-content;
+    margin: 18px -10px 0 0;
+    cursor: pointer;
+}
+
+header .navbar-toggler .bar {
+    width: 40px;
+    height: 5px;
+    margin-bottom: 10px;
+    background: #007bff;
+    border-radius: 10%;
+    transition: .4s;
+}
+
+header .navbar-toggler .bar :hover {
+    background: #4CAF50;
+}
+
+input {
+    display: none;
+}
+
+input:checked~nav .nav-list {
+    transform: translateY(0);
+    visibility: visible;
+}
+
+input:checked~nav .navbar-toggler {
+    margin-top: 35px;
+}
+
+input:checked~nav .navbar-toggler .bar:nth-child(1) {
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+input:checked~nav .navbar-toggler .bar:nth-child(2) {
+    display: none;
+}
+
+input:checked~nav .navbar-toggler .bar:nth-child(3) {
+    transform: rotate(-45deg);
+}
+
+@media (max-width:300px) {
+    body {
+        font-size: 10px;
+    }
+}
