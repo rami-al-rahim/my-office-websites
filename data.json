@@ -20,17 +20,17 @@
         }
     },
     "games":{
-        "War defense":{
-            "short_description":"",
-            "app_icon_url":""
+        "War Defense - tower defense":{
+            "short_description":"Protect your land from enemy forces",
+            "app_icon_url":"https://lh3.googleusercontent.com/9lmg09I2Qie_CKGRMn5Gd_B7FFERROh3evmGobrWd9zKisnO-eDeOEqXuy07KwKudRo"
         },
         "Earth defense":{
-            "short_description":"",
-            "app_icon_url":""
+            "short_description":"Defend the Earth for the survival of the human race and destroy the spacecraft",
+            "app_icon_url":"https://lh3.googleusercontent.com/rsRd_FVjc3G_JA_U9DHO8wHfgEatjuP524yuQImtS41qt0Fl_CX9LR79FSVgddNIaMyR"
         },
         "Football Time":{
-            "short_description":"",
-            "app_icon_url":""
+            "short_description":"Competitive team game",
+            "app_icon_url":"https://lh3.googleusercontent.com/8DXKIWYNLO0R0Tpf6FBHvc6EIklXubKlhiAyQaw3J9snK_T2pylj12adymN_nZya4n4"
         }
     },
     "websites":{
