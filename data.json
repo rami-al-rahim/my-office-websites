@@ -40,7 +40,12 @@
         },
         "arabic-text-reverseer":{
             "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
-            "icon_url":"https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png"
+            "icon_url":""
+        },
+        "Random artcale":{
+            "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
+            "icon_url":""
+
         }
     }
 }
