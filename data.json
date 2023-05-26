@@ -35,8 +35,8 @@
     },
     "websites":{
         "Password Generator":{
-            "short_description": "",
-            "icon_url":""
+            "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
+            "icon_url":"https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png"
         }
     }
 }
