@@ -79,14 +79,14 @@ p {
     margin-bottom: 10px;
 }
 
-/* Styling for games section */
-.games {
+/* Styling for projects section */
+.projects {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.game {
+.project {
     width: 30%;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -95,25 +95,25 @@ p {
     margin: auto;
 }
 
-.game img {
+.project img {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-.game h2 {
+.project h2 {
     font-size: 24px;
     color: #333;
     margin: 10px;
 }
 
-.game p {
+.project p {
     font-size: 16px;
     color: #555;
     margin: 10px;
 }
 
-.game-buttons {
+.project-buttons {
     display: flex;
     justify-content: space-around;
     margin-top: 40px;
@@ -121,7 +121,7 @@ p {
     padding-bottom: 40px;
 }
 
-.game-buttons a {
+.project-buttons a {
     display: inline-block;
     padding: 10px;
     background-color: #007bff;
@@ -132,16 +132,16 @@ p {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
-.game-buttons a:hover {
+.project-buttons a:hover {
     background-color: #0062cc;
 }
 
-.game-buttons a:first-of-type {
+.project-buttons a:first-of-type {
     background-color: #4CAF50;
     color: white;
 }
 
-.game-buttons a:first-of-type:hover {
+.project-buttons a:first-of-type:hover {
     background-color: #3e8e41;
     color: white;
 }
@@ -178,7 +178,7 @@ p {
         font-size: 1.8em;
     }
 
-    .game {
+    .project {
         width: 90%;
         margin-bottom: 20px;
         border: 1px solid #ccc;

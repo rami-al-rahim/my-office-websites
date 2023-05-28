@@ -28,15 +28,21 @@
     "games": {
         "War Defense - tower defense": {
             "short_description": "Protect your land from enemy forces",
-            "icon_url": "https://lh3.googleusercontent.com/9lmg09I2Qie_CKGRMn5Gd_B7FFERROh3evmGobrWd9zKisnO-eDeOEqXuy07KwKudRo"
+            "icon_url": "https://lh3.googleusercontent.com/9lmg09I2Qie_CKGRMn5Gd_B7FFERROh3evmGobrWd9zKisnO-eDeOEqXuy07KwKudRo",
+            "about_page": "",
+            "Google_play": ""
         },
         "Earth defense": {
             "short_description": "Defend the Earth for the survival of the human race and destroy the spacecraft",
-            "icon_url": "https://lh3.googleusercontent.com/rsRd_FVjc3G_JA_U9DHO8wHfgEatjuP524yuQImtS41qt0Fl_CX9LR79FSVgddNIaMyR"
+            "icon_url": "https://lh3.googleusercontent.com/rsRd_FVjc3G_JA_U9DHO8wHfgEatjuP524yuQImtS41qt0Fl_CX9LR79FSVgddNIaMyR",
+            "about_page": "sss",
+            "Google_play": ""
         },
         "Football Time": {
             "short_description": "Competitive team game",
-            "icon_url": "https://lh3.googleusercontent.com/8DXKIWYNLO0R0Tpf6FBHvc6EIklXubKlhiAyQaw3J9snK_T2pylj12adymN_nZya4n4"
+            "icon_url": "https://lh3.googleusercontent.com/8DXKIWYNLO0R0Tpf6FBHvc6EIklXubKlhiAyQaw3J9snK_T2pylj12adymN_nZya4n4",
+            "about_page": "",
+            "Google_play": ""
         }
     },
     "websites": {
@@ -45,11 +51,11 @@
             "icon_url": "https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png"
         },
         "arabic-text-reverser": {
-            "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
+            "short_description": "مرحبًا بك في موقعنا لتحويل النص العربي إلى تنسيق قابل للقراءة والعرض بشكل صحيح على أنظمتك وأجهزتك. نقدم أدوات سهلة الاستخدام وفعّالة لتحويل النص العربي غير المدعوم إلى تنسيق متوافق مع العديد من التطبيقات والمنصات المختلفة. استخدم موقعنا لتجربة ممتازة في عرض واستخدام النص العربي على جميع الأنظمة والمنصات.",
             "icon_url": "https://github.com/rami-dv/arabic-text-reverseer/blob/main/android/icon-512.png?raw=true"
         },
         "Random article": {
-            "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
+            "short_description": "Our website simplifies the process of generating Wikipedia articles. With a user-friendly interface, users can quickly and easily create high-quality articles on various topics. Our platform utilizes advanced algorithms and natural language processing to ensure accuracy and engagement. Users have full control over customization and editing, including adding images and references. We are dedicated to continually improving our platform for the best user experience. Join us today and start creating top-notch Wikipedia articles in no time!",
             "icon_url": "https://github.com/rami-dv/random-wiki/blob/main/wiki.png?raw=true"
         }
     }
