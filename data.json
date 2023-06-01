@@ -4,25 +4,27 @@
             "short_description": "Learn by reading random articles everyday",
             "Full_description": "",
             "screenshots_url": [
-                "https://lh3.googleusercontent.com/_zk6z6b2-0dYAAtwLk52NgmUnJE2qOm2XqRRjvE1o2cB-Z5DP5rvTtNdNixvXDm4bOQy",
-                "https://lh3.googleusercontent.com/Uvrnlgj9VWOAw4_rz8jkAiZIj-co_qtcyHPLBjB3eKbopZzr85vXP6itAScNWpHCk1PE",
-                "https://lh3.googleusercontent.com/JJFDhC2pfIegP2y1PEKyd0XtcoQKTJ05HbSn4wpRswwd8hKzG209q8m4fdAThyOsIQ",
-                "https://lh3.googleusercontent.com/1upnsr3gOqjzApw0dIL_SW_IsEjv1-28s0qjmk2RgsudJQOFb9yEvZPzj6CZjGJbp82j"
-            ],
-            "icon_url": "https://lh3.googleusercontent.com/1CbjFw72jzaganPygr-6Lj2MhMV5QHUy41FgXPECPeSWTM7DAM0lEK7n25TgL1MIveo",
-            "Feature_graphic_url": "https://lh3.googleusercontent.com/iAXGSPZ289V24YHCe_a1YRXPEDMjAxTFkBGDJYJT7XtSalwyLHl0EEob8fwXx1YrDSk"
-        },
-        "What to do - to do list app": {
-            "short_description": "Increase your productivity! Make your own to-do list",
-            "Full_description": "",
-            "screenshots_url": [
                 "https://lh3.googleusercontent.com/xvRNK4a9wpYnUeSkaOtT0Z4fPUMY9mabQsYCQNiIKNPQZdCkiXWn_Y9X8VzlKxXFuFo",
                 "https://lh3.googleusercontent.com/8x_JgHUGTn4AmXtaJCPviYAcws-9m7FtsjyStTNg3pz1u2f3IRCrq609WXpPW1QY-CY",
                 "https://lh3.googleusercontent.com/m3DeekVIu3iKQZc-H9_4vfZhj1Tq132WZq5uN_lqojInD3bSYkYZ0DUGAGRjinCrQQA",
                 "https://lh3.googleusercontent.com/BorzfBBDQOYLu7sUTKByUMt0WCZcZ4akewjLCiklZ3IYpcNVnwqkWQApq0MNx_i9eA"
             ],
+            "icon_url": "https://lh3.googleusercontent.com/1CbjFw72jzaganPygr-6Lj2MhMV5QHUy41FgXPECPeSWTM7DAM0lEK7n25TgL1MIveo",
+            "Feature_graphic_url": "https://lh3.googleusercontent.com/iAXGSPZ289V24YHCe_a1YRXPEDMjAxTFkBGDJYJT7XtSalwyLHl0EEob8fwXx1YrDSk",
+            "Google_play": "https://play.google.com/store/apps/details?id=com.rami.randomwiki"
+        },
+        "What to do - to do list app": {
+            "short_description": "Increase your productivity! Make your own to-do list",
+            "Full_description": "",
+            "screenshots_url": [
+                "https://lh3.googleusercontent.com/_zk6z6b2-0dYAAtwLk52NgmUnJE2qOm2XqRRjvE1o2cB-Z5DP5rvTtNdNixvXDm4bOQy",
+                "https://lh3.googleusercontent.com/Uvrnlgj9VWOAw4_rz8jkAiZIj-co_qtcyHPLBjB3eKbopZzr85vXP6itAScNWpHCk1PE",
+                "https://lh3.googleusercontent.com/JJFDhC2pfIegP2y1PEKyd0XtcoQKTJ05HbSn4wpRswwd8hKzG209q8m4fdAThyOsIQ",
+                "https://lh3.googleusercontent.com/1upnsr3gOqjzApw0dIL_SW_IsEjv1-28s0qjmk2RgsudJQOFb9yEvZPzj6CZjGJbp82j"
+            ],
             "icon_url": "https://lh3.googleusercontent.com/aoyi5x6BFzZZMQ8UqNcbqdhGENptOHbxLKd2_grahNK5GxvegleenGoH0zZ1IQlT4bY",
-            "Feature_graphic_url": "https://lh3.googleusercontent.com/lRWeLT6e4fh6l1nucd2rqXT-9sVqdsIgTmjyc1JFQdajwr1C5Lvt_DKO0X9qEFD0PA"
+            "Feature_graphic_url": "https://lh3.googleusercontent.com/lRWeLT6e4fh6l1nucd2rqXT-9sVqdsIgTmjyc1JFQdajwr1C5Lvt_DKO0X9qEFD0PA",
+            "Google_play": "https://play.google.com/store/apps/details?id=com.rami.whattodo"
         }
     },
     "games": {
@@ -30,19 +32,19 @@
             "short_description": "Protect your land from enemy forces",
             "icon_url": "https://lh3.googleusercontent.com/9lmg09I2Qie_CKGRMn5Gd_B7FFERROh3evmGobrWd9zKisnO-eDeOEqXuy07KwKudRo",
             "about_page": "",
-            "Google_play": ""
+            "Google_play": "https://play.google.com/store/apps/details?id=com.rami.TowerDefens"
         },
         "Earth defense": {
             "short_description": "Defend the Earth for the survival of the human race and destroy the spacecraft",
             "icon_url": "https://lh3.googleusercontent.com/rsRd_FVjc3G_JA_U9DHO8wHfgEatjuP524yuQImtS41qt0Fl_CX9LR79FSVgddNIaMyR",
-            "about_page": "sss",
-            "Google_play": ""
+            "about_page": "",
+            "Google_play": "https://play.google.com/store/apps/details?id=com.Rami.Earthdefense"
         },
         "Football Time": {
             "short_description": "Competitive team game",
             "icon_url": "https://lh3.googleusercontent.com/8DXKIWYNLO0R0Tpf6FBHvc6EIklXubKlhiAyQaw3J9snK_T2pylj12adymN_nZya4n4",
             "about_page": "",
-            "Google_play": ""
+            "Google_play": "https://play.google.com/store/apps/details?id=com.Rami.football"
         }
     },
     "websites": {
@@ -50,12 +52,12 @@
             "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
             "icon_url": "https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png"
         },
-        "arabic-text-reverser": {
-            "short_description": "مرحبًا بك في موقعنا لتحويل النص العربي إلى تنسيق قابل للقراءة والعرض بشكل صحيح على أنظمتك وأجهزتك. نقدم أدوات سهلة الاستخدام وفعّالة لتحويل النص العربي غير المدعوم إلى تنسيق متوافق مع العديد من التطبيقات والمنصات المختلفة. استخدم موقعنا لتجربة ممتازة في عرض واستخدام النص العربي على جميع الأنظمة والمنصات.",
+        "عكس النص العربي": {
+            "short_description": "مرحبًا بك في موقعنا لتحويل النص العربي إلى تنسيق قابل للقراءة والعرض بشكل صحيح على أنظمتك وأجهزتك الغير داعمة للغة العربية بشكل صحيح",
             "icon_url": "https://github.com/rami-dv/arabic-text-reverseer/blob/main/android/icon-512.png?raw=true"
         },
         "Random article": {
-            "short_description": "Our website simplifies the process of generating Wikipedia articles. With a user-friendly interface, users can quickly and easily create high-quality articles on various topics. Our platform utilizes advanced algorithms and natural language processing to ensure accuracy and engagement. Users have full control over customization and editing, including adding images and references. We are dedicated to continually improving our platform for the best user experience. Join us today and start creating top-notch Wikipedia articles in no time!",
+            "short_description": "Welcome to our website! Here, we provide a service that generates random Wikipedia articles based on your interests.",
             "icon_url": "https://github.com/rami-dv/random-wiki/blob/main/wiki.png?raw=true"
         }
     }
