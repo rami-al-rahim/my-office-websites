@@ -29,7 +29,7 @@ fetch('data.json')
         <p>${data.apps[project].short_description}</p>
         <div class="project-buttons">
             <a href="${data.apps[project].Google_play}" target="_blank">Get on Google Play</a>
-            <a href="/Pages/Viewproject/view.html?project=${project}" target="_blank">About</a>
+            <a href="/Pages/ViewProject/view.html?project=${project}" target="_blank">About</a>
         </div>`;
             AppsSection.appendChild(element);
         }
