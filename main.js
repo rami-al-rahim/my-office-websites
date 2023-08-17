@@ -43,8 +43,7 @@ fetch('data.json')
         <h2>${project}</h2>
         <p>${data.websites[project].short_description}</p>
         <div class="project-buttons" dir="ltr">
-            <a href="${data.websites[project].Google_play}" target="_blank">Get on Google Play</a>
-            <a href="${data.websites[project].about_page}" target="_blank">About</a>
+            <a href="${data.websites[project].url}" target="_blank">Open website</a>
         </div>`;
             WebsitesSection.appendChild(element);
         }

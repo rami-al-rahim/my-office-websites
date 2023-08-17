@@ -50,15 +50,18 @@
     "websites": {
         "Password Generator": {
             "short_description": "Generate secure passwords with our free online password generator. Our tool is easy to use and completely secure, and it can help you create strong passwords that are impossible to crack.",
-            "icon_url": "https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png"
+            "icon_url": "https://raw.githubusercontent.com/rami-dv/password-generator/main/app/icon-512.png",
+            "url":""
         },
         "عكس النص العربي": {
             "short_description": "مرحبًا بك في موقعنا لتحويل النص العربي إلى تنسيق قابل للقراءة والعرض بشكل صحيح على أنظمتك وأجهزتك الغير داعمة للغة العربية بشكل صحيح",
-            "icon_url": "https://github.com/rami-dv/arabic-text-reverseer/blob/main/android/icon-512.png?raw=true"
+            "icon_url": "https://github.com/rami-dv/arabic-text-reverseer/blob/main/android/icon-512.png?raw=true",
+            "url":""
         },
         "Random article": {
             "short_description": "Welcome to our website! Here, we provide a service that generates random Wikipedia articles based on your interests.",
-            "icon_url": "https://github.com/rami-dv/random-wiki/blob/main/wiki.png?raw=true"
+            "icon_url": "https://github.com/rami-dv/random-wiki/blob/main/wiki.png?raw=true",
+            "url":""
         }
     }
 }

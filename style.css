@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    color: #0062cc;
 }
 
 /* Styling for main section */
@@ -68,18 +69,31 @@ main h1 image {
 
 h1 {
     font-size: 36px;
-    color: #333;
+    color: black;
     margin-bottom: 20px;
 }
 
 p {
     font-size: 18px;
     line-height: 1.5;
-    color: #555;
+    color: black;
     margin-bottom: 10px;
 }
 
+#socialMedia{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#socialMedia a{
+    margin-left: 20px;
+}
+
+
 /* Styling for projects section */
+#sectionName span{
+    color: #007bff; padding-left: 20px;
+}
 .projects {
     display: flex;
     flex-wrap: wrap;
@@ -93,6 +107,7 @@ p {
     border-radius: 5px;
     overflow: hidden;
     margin: auto;
+    background-color: #fff;
 }
 
 .project img {
@@ -147,7 +162,6 @@ p {
 }
 
 .footer {
-    margin-top: 20px;
     background-color: #f0f0f0;
     color: #fff;
     padding: 2em;
@@ -163,6 +177,7 @@ p {
 .footer .social-icons a {
     font-size: 1.3em;
     padding: 0 12px 0 0;
+    color: #0062cc;
 }
 
 @media (max-width:1023px) {
