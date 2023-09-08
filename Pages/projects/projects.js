@@ -107,12 +107,12 @@ fetch('/data.json')
                 element.style.marginBottom = '20px';
                 element.innerHTML =
                     `<img src="${data.apps[project].icon_url}" alt="${project}">
-        <h2>${project}</h2>
-        <p>${data.apps[project].short_description}</p>
-        <div class="project-buttons">
-            <a href="${data.apps[project].Google_play}" target="_blank">Get on Google Play</a>
-            <a href="${data.apps[project].about_page}" target="_blank">About</a>
-        </div>`;
+                    <h2>${project}</h2>
+                    <p>${data.apps[project].short_description}</p>
+                    <div class="project-buttons">
+                    <a href="${data.apps[project].Google_play}" target="_blank">Get on Google Play</a>
+                    <a href="/Pages/ViewProject/view.html?project=${project}" target="_blank">About</a>
+                    </div>`;
                 document.getElementById("main").appendChild(element);
             }
         }
@@ -156,12 +156,12 @@ fetch('/data.json')
                 element.style.marginBottom = '20px';
                 element.innerHTML =
                     `<img src="${data.apps[project].icon_url}" alt="${project}">
-        <h2>${project}</h2>
-        <p>${data.apps[project].short_description}</p>
-        <div class="project-buttons">
-            <a href="${data.apps[project].Google_play}" target="_blank">Get on Google Play</a>
-            <a href="${data.apps[project].about_page}" target="_blank">About</a>
-        </div>`;
+                    <h2>${project}</h2>
+                    <p>${data.apps[project].short_description}</p>
+                    <div class="project-buttons">
+                    <a href="${data.apps[project].Google_play}" target="_blank">Get on Google Play</a>
+                    <a href="${data.apps[project].about_page}" target="_blank">About</a>
+                    </div>`;
                 document.getElementById("main").appendChild(element);
             }
             for (var project in data.websites) {
@@ -171,12 +171,11 @@ fetch('/data.json')
                 element.style.marginBottom = '20px';
                 element.innerHTML =
                     `<img src="${data.websites[project].icon_url}" alt="${project}">
-        <h2>${project}</h2>
-        <p>${data.websites[project].short_description}</p>
-        <div class="project-buttons" dir="ltr">
-            <a href="${data.websites[project].Google_play}" target="_blank">Get on Google Play</a>
-            <a href="${data.websites[project].about_page}" target="_blank">About</a>
-        </div>`;
+                    <h2>${project}</h2>
+                    <p>${data.websites[project].short_description}</p>
+                    <div class="project-buttons" dir="ltr">
+                    <a href="${data.websites[project].url}" target="_blank">open</a>
+                    </div>`;
                 document.getElementById("main").appendChild(element);
             }
         }
