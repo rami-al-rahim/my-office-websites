@@ -12,8 +12,7 @@
           const urlParams = new URLSearchParams(queryString);
           const id = urlParams.get("id");
           if (id != null) {
-            console.log(id);
-            document.getElementById("body").innerHTML = JSON.stringify(e.id);
+            document.getElementById("body").innerHTML = JSON.stringify(e[id]);
           } else document.getElementById("body").innerHTML = JSON.stringify(e);
         })
         .catch((e) => {
