@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      fetch("../data.json")
+        .then((e) => e.json())
+        .then((e) => {
+          const queryString = window.location.search;
+          const urlParams = new URLSearchParams(queryString);
+          const id = urlParams.get("id");
+          if (id != null) {
+            console.log(id);
+            document.getElementById("body").innerHTML = JSON.stringify(e.id);
+          } else document.getElementById("body").innerHTML = JSON.stringify(e);
+        })
+        .catch((e) => {
+          console.error("Error:", e);
+        });
+    </script>
+  </head>
+  <body>
+    <h1 id="body"></h1>
+  </body>
+</html>
