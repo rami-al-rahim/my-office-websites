@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.rami.randomwiki",
+      "sha256_cert_fingerprints": [
+        "8C:15:6B:7A:6D:99:C2:C3:6B:57:31:5A:43:E7:3C:E2:3E:07:C4:36:6D:C4:5B:D5:A1:CB:9C:57:DD:30:9D:B4"
+      ]
+    }
+  }
+]
