@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <script>
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const social = urlParams.get("social");
+      if (social != null) {
+        console.log(social);
+        switch (social) {
+          case "youtube":
+            window.open("https://www.youtube.com/@rami.al_rahim");
+            console.log("ds");
+            break;
+          case "email":
+            window.open("mailto:rami.info30@gmail.com");
+            break;
+          case "apps":
+            window.open("https://play.google.com/store/apps/dev?id=5371712804812507395");
+            break;
+          case "instagram":
+            window.open("https://www.instagram.com/rami_dv/");
+            break;
+          case "website":
+            window.open("https://rami-dev.com");
+            break;
+          case "twitter":
+            window.open("https://twitter.com/ramialrahim");
+            break;
+        }
+      }
+    </script>
+  </body>
+</html>
