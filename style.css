@@ -17,7 +17,7 @@
 .arrow-container{flex-shrink:0;color:#666;font-size:20px;padding-left:10px}
 @media (max-width:768px){
 body{display:flex;flex-direction:column;align-items:center}
-.sidebar{position:relative;width:100%;height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;margin:0;box-sizing:border-box}
+.sidebar{position:relative;width:100%;height:fit-content;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;margin:0;box-sizing:border-box}
 .list-container{margin-top:20px;padding:20px;width:100%;box-sizing:border-box}
 .list-item{flex:none;width:100%;max-width:600px;margin:10px auto}
 }
@@ -28,3 +28,25 @@ body{display:flex;flex-direction:column;align-items:center}
 #socialMedia a{color:#555;font-size:24px;transition:color .3s}
 #socialMedia a:hover{color:#007bff}
 a{text-decoration: none;}
+
+.profileImage{border-radius: 20px;}
+/* Spinner Styles */
+.spinner {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
