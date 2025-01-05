@@ -1,52 +1,31 @@
 @import url(https://fonts.googleapis.com/css2?family=Changa:wght@300&display=swap);
 *{font-family:Changa,sans-serif;margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth;color:#000}
-.sidebar{margin:0 70px;padding-top:110px;width:30%;height:100vh;position:fixed;z-index:999;display:flex;flex-direction:column;align-items:center;background-color:#fff}
-.subBtn{border-top-left-radius:0;border-bottom-left-radius:0;height:100%}
-@media (max-width:768px){
-.sidebar{position:static;width:100%;height:auto;padding:20px;margin:0;text-align:center}
-.sidebar img{max-width:100%;height:auto;margin-bottom:20px}
-.input-group{width:100%;margin-bottom:20px}
+body {
+  background-color: #f8f9fc;
+  color: #333;
 }
-.list-container{display:flex;flex-direction:column;align-items:center;padding:20px;box-sizing:border-box;gap:20px}
-.list-item{display:flex;align-items:center;width:100%;max-width:600px;padding:10px;background-color:#fdfaff;border-radius:8px;box-shadow:0 2px 4px rgba(0,0,0,.1);text-align:left}
-.icon-container{flex-shrink:0;width:40px;height:40px;background-color:#e0e0e0;display:flex;align-items:center;justify-content:center;border-radius:4px;margin-right:15px}
-.icon{width:20px;height:20px}
-.text-container{flex-grow:1}
-.title{margin:0;font-size:16px;color:#333;font-weight:700}
-.description{margin:5px 0 0;font-size:14px;color:#666}
-.arrow-container{flex-shrink:0;color:#666;font-size:20px;padding-left:10px}
-@media (max-width:768px){
-body{display:flex;flex-direction:column;align-items:center}
-.sidebar{position:relative;width:100%;height:fit-content;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:20px;margin:0;box-sizing:border-box}
-.list-container{margin-top:20px;padding:20px;width:100%;box-sizing:border-box}
-.list-item{flex:none;width:100%;max-width:600px;margin:10px auto}
-}
-#socialMedia{display:flex;justify-content:center;gap:15px;margin-top:20px}
-#socialMedia a{color:#555;font-size:24px;transition:color .3s}
-#socialMedia a:hover{color:#007bff}
-#socialMedia{display:flex;justify-content:center;gap:15px;margin-top:20px}
-#socialMedia a{color:#555;font-size:24px;transition:color .3s}
-#socialMedia a:hover{color:#007bff}
-a{text-decoration: none;}
-
-.profileImage{border-radius: 20px;}
-/* Spinner Styles */
-.spinner {
-  border: 8px solid #f3f3f3; /* Light grey */
-  border-top: 8px solid #3498db; /* Blue */
+.profile-pic {
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  animation: spin 1s linear infinite;
-  margin: 20px auto;
-  display: none;
+  margin-bottom: 15px;
 }
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
+.subscribe input {
+  border-radius: 5px;
+}
+.subscribe button {
+  border-radius: 5px;
+}
+.project-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+.social-icons a {
+  font-size: 1.2rem;
+  color: #007bff;
+  margin: 0 5px;
 }
