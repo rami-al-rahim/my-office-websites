@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ post.title }} - rami-dev</title>
+    <link rel="shortcut icon" type="image/png" href="../index_files/rj.png">
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="{{ post.title }} - rami-dev">
+    <meta name="description" content="{{ post.excerpt }}">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ post.title }} - rami-dev">
+    <meta property="og:description" content="{{ post.excerpt }}">
+    <meta property="og:image" content="{{ post.featured_image | default: '../index_files/rj.png' }}">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="{{ post.title }} - rami-dev">
+    <meta property="twitter:description" content="{{ post.excerpt }}">
+    <meta property="twitter:image" content="{{ post.featured_image | default: '../index_files/rj.png' }}">
+
+    <style>
+        .post-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .post-meta {
+            color: var(--light-text);
+            margin: 1rem 0;
+        }
+
+        .post-content {
+            max-width: 70ch;
+            margin: 0 auto;
+        }
+
+        .post-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin: 2rem 0;
+        }
+
+        .post-content p {
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .post-content h2,
+        .post-content h3 {
+            margin-top: 2.5rem;
+        }
+
+        .post-footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .share-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .share-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #fff;
+            font-size: 0.875rem;
+            transition: opacity 0.2s;
+        }
+
+        .share-button:hover {
+            opacity: 0.9;
+        }
+
+        .share-twitter { background-color: #1DA1F2; }
+        .share-facebook { background-color: #1877F2; }
+        .share-linkedin { background-color: #0A66C2; }
+
+        .author-box {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: var(--light-background);
+            border-radius: 0.5rem;
+        }
+
+        .author-avatar {
+            width: 64px;
+            height: 64px;
+            border-radius: 50%;
+        }
+
+        .author-bio {
+            flex: 1;
+        }
+
+        .author-bio h4 {
+            margin-bottom: 0.5rem;
+        }
+
+        .related-posts {
+            margin-top: 3rem;
+        }
+
+        .related-posts h3 {
+            margin-bottom: 1.5rem;
+        }
+
+        .related-posts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="site-header" role="banner">
+        <div class="wrapper">
+            <nav class="site-nav">
+                <ul class="list-inline">
+                    <li><a href="../index.html" class="brand-logo">rami-dev</a></li>
+                    <li><a href="../products.html">Products</a></li>
+                    <li><a href="../blog.html">Blog</a></li>
+                    <li><a href="../social.html">Social</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content" aria-label="Content">
+        <article class="wrapper">
+            <header class="post-header">
+                <div class="post-meta">
+                    <time datetime="{{ post.date }}">{{ post.date }}</time>
+                    {% if post.category %}
+                    <span class="category">{{ post.category }}</span>
+                    {% endif %}
+                </div>
+                <h1>{{ post.title }}</h1>
+                {% if post.subtitle %}
+                <p class="text-muted">{{ post.subtitle }}</p>
+                {% endif %}
+            </header>
+
+            <div class="post-content">
+                {{ post.content }}
+            </div>
+
+            <footer class="post-footer">
+                <div class="share-buttons">
+                    <a href="https://twitter.com/intent/tweet?text={{ post.title }}&url={{ page.url }}" 
+                       class="share-button share-twitter" target="_blank" rel="noopener">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+                        </svg>
+                        Tweet
+                    </a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.url }}"
+                       class="share-button share-facebook" target="_blank" rel="noopener">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                        Share
+                    </a>
+                    <a href="https://www.linkedin.com/shareArticle?mini=true&url={{ page.url }}&title={{ post.title }}"
+                       class="share-button share-linkedin" target="_blank" rel="noopener">
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                        </svg>
+                        Share
+                    </a>
+                </div>
+
+                <div class="author-box">
+                    <img src="../index_files/rj.png" alt="Author" class="author-avatar">
+                    <div class="author-bio">
+                        <h4>{{ post.author | default: 'rami-dev' }}</h4>
+                        <p>Indie hacker building simple software solutions. Follow me for updates on products, development insights, and tech tutorials.</p>
+                    </div>
+                </div>
+
+                {% if related_posts %}
+                <div class="related-posts">
+                    <h3>Related Posts</h3>
+                    <div class="related-posts-grid">
+                        {% for related_post in related_posts limit:3 %}
+                        <article class="blog-post">
+                            <div class="post-meta">
+                                <time datetime="{{ related_post.date }}">{{ related_post.date }}</time>
+                            </div>
+                            <h4><a href="{{ related_post.url }}">{{ related_post.title }}</a></h4>
+                            <p>{{ related_post.excerpt }}</p>
+                        </article>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+            </footer>
+        </article>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrapper">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Get in touch with us for any questions or support.</p>
+                    <a href="mailto:contact@rami-dev.com" class="btn-secondary">Email Us</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#" target="_blank" rel="noopener">Twitter</a>
+                        <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+                        <a href="#" target="_blank" rel="noopener">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 rami-dev. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../main.js"></script>
+</body>
+</html>
