@@ -1,47 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  </head>
-  <body>
-    <script>
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      const social = urlParams.get("social");
-      if (social != null) {
-        console.log(social);
-        switch (social) {
-          case "youtube":
-            window.open("https://www.youtube.com/@rami.al_rahim", "_self");
-            console.log("ds");
-            break;
-          case "email":
-            window.open("mailto:support@rami-dev.com", "_self");
-            break;
-          case "apps":
-            window.open(
-              "https://play.google.com/store/apps/dev?id=5371712804812507395",
-              "_self"
-            );
-            break;
-          case "instagram":
-            window.open("https://www.instagram.com/rami_dv/", "_self");
-            break;
-          case "website":
-            window.open("https://rami-dev.com");
-            break;
-          case "twitter":
-            window.open("https://twitter.com/rami_dv", "_self");
-            break;
-          case "newsletter":
-            window.open("https://mailchi.mp/249b12c8e601/stay-up-to-date", "_self");
-            break;
-          case "Feedback":
-            window.open("https://forms.gle/aMBENVPgVbC56SLr8", "_self");
-            break;
-        }
-      } else window.open("/404.html", "_self");
-    </script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <script>
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const social = urlParams.get("social");
+    if (social != null) {
+      console.log(social);
+      switch (social) {
+        case "youtube":
+          window.open("https://www.youtube.com/@rami_dev", "_self");
+          console.log("ds");
+          break;
+        case "email":
+          window.open("mailto:support@rami-dev.com", "_self");
+          break;
+        case "apps":
+          window.open(
+            "https://play.google.com/store/apps/dev?id=5371712804812507395",
+            "_self"
+          );
+          break;
+        case "instagram":
+          window.open("https://www.instagram.com/rami.al.rahim/", "_self");
+          break;
+        case "website":
+          window.open("https://rami-dev.com");
+          break;
+        case "twitter":
+          window.open("https://twitter.com/rami_dv", "_self");
+          break;
+        case "newsletter":
+          window.open("https://mailchi.mp/249b12c8e601/stay-up-to-date", "_self");
+          break;
+        case "Feedback":
+          window.open("https://forms.gle/aMBENVPgVbC56SLr8", "_self");
+          break;
+        case "GitHub":
+          window.open("https://github.com/rami-al-rahim/", "_self");
+          break;
+        case "Linkedin":
+          window.open("https://www.linkedin.com/in/rami-mostafa-03090a303/", "_self");
+          break;
+      }
+    } else window.open("/404.html", "_self");
+  </script>
+</body>
+
 </html>

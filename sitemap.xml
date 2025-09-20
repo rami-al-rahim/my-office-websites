@@ -1,28 +1,10 @@
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
-<url>
-<loc>http://rami-dev.com/</loc>
-<lastmod>2024-03-02T15:33:37+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>http://rami-dev.com/Pages/projects/projects.html?type=Games</loc>
-<lastmod>2024-03-02T15:33:37+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://rami-dev.com/Pages/projects/projects.html?type=Apps</loc>
-<lastmod>2024-03-02T15:33:37+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://rami-dev.com/Pages/projects/projects.html?type=Websites</loc>
-<lastmod>2024-03-02T15:33:37+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>http://rami-dev.com/Pages/about.html</loc>
-<lastmod>2024-03-02T15:33:37+00:00</lastmod>
-<priority>0.80</priority>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+    <!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+    <url>
+        <loc>http://rami-dev.com/</loc>
+        <lastmod>2024-03-02T15:33:37+00:00</lastmod>
+        <priority>1.00</priority>
+    </url>
 </urlset>
