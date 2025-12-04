@@ -1,3 +1,6 @@
 title: My Jekyll Site
 description: My GitHub repo as a CMS
 theme: minima   # built-in theme
+url: "https://rami-dev.com/" # the base hostname & protocol for your site
+plugins:
+  - jekyll-sitemap
