@@ -1,0 +1,11 @@
+services:
+  - type: web
+    runtime: static
+    name: rami-dev
+    buildCommand: bundle install && bundle exec jekyll build
+    staticPublishPath: ./_site
+    envVars:
+      - key: RUBY_VERSION
+        value: 3.2.2
+      - key: JEKYLL_ENV
+        value: production

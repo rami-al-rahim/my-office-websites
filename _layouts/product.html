@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<article class="product-page">
+  <p class="back"><a href="{{ '/products/' | relative_url }}">All products</a></p>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <p class="lede">{{ page.tagline }}</p>
+    <p class="meta">
+      {% if page.status %}<span class="tag">{{ page.status }}</span>{% endif %}
+      {% if page.stack %}<span>Built with {{ page.stack | join: ", " }}</span>{% endif %}
+    </p>
+    {% if page.link %}<a class="cta" href="{{ page.link }}" target="_blank" rel="noopener">{% if page.cta %}{{ page.cta }}{% else %}Visit {{ page.title }}{% endif %}</a>{% endif %}
+  </header>
+  <div class="prose">{{ content }}</div>
+</article>

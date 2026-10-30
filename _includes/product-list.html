@@ -1,0 +1,16 @@
+{%- assign items = site.products | sort: "order" -%}
+{%- if items.size == 0 -%}
+<p class="sub">Products will show up here soon.</p>
+{%- else -%}
+<ul class="products">
+  {%- for p in items -%}
+  <li class="product">
+    <a href="{{ p.url | relative_url }}">
+      <span class="name">{{ p.title }}</span>
+      {%- if p.status %}<span class="tag">{{ p.status }}</span>{% endif -%}
+      <span class="desc">{{ p.tagline }}</span>
+    </a>
+  </li>
+  {%- endfor -%}
+</ul>
+{%- endif -%}

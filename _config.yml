@@ -1,6 +1,35 @@
-title: My Jekyll Site
-description: My GitHub repo as a CMS
-theme: minima   # built-in theme
-url: "https://rami-dev.com/" # the base hostname & protocol for your site
-plugins:
-  - jekyll-sitemap
+title: Rami Mustafa
+tagline: Founder and full-stack developer
+description: Rami Mustafa builds and ships software products. Careorize, Tempo Checker, and notes on building them.
+url: https://rami-dev.com
+baseurl: ""
+lang: en
+
+# Newsletter: paste your provider's form action URL (Buttondown, Formspree, MailerLite, etc.)
+# Buttondown example: https://buttondown.com/api/emails/embed-subscribe/YOUR-USERNAME
+newsletter_action: "https://buttondown.com/api/emails/embed-subscribe/YOUR-USERNAME"
+
+# Contact form: create a form at formspree.io and paste its URL here
+contact_form_action: "https://formspree.io/f/YOUR-FORM-ID"
+email: hello@rami-dev.com
+
+social:
+  github: "https://github.com/YOUR-GITHUB"
+  x: "https://x.com/YOUR-HANDLE"
+  linkedin: "https://www.linkedin.com/in/YOUR-PROFILE"
+
+permalink: /blog/:title/
+plugins: [jekyll-seo-tag, jekyll-sitemap, jekyll-feed]
+
+collections:
+  products:
+    output: true
+    permalink: /products/:name/
+
+defaults:
+  - scope: { path: "", type: products }
+    values: { layout: product }
+  - scope: { path: "", type: posts }
+    values: { layout: post }
+
+exclude: [README.md, Gemfile, Gemfile.lock, render.yaml, vendor]

@@ -1,0 +1,10 @@
+<section class="newsletter" aria-labelledby="nl-title">
+  <h2 id="nl-title">Get new posts and product updates</h2>
+  <p>One email when I ship something or write something useful. No spam, unsubscribe anytime.</p>
+  <form action="{{ site.newsletter_action }}" method="post" target="popupwindow" class="inline-form">
+    <label class="sr" for="nl-email">Email address</label>
+    <input id="nl-email" type="email" name="email" placeholder="you@example.com" required autocomplete="email">
+    <input type="hidden" name="embed" value="1">
+    <button type="submit">Subscribe</button>
+  </form>
+</section>

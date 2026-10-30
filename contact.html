@@ -1,0 +1,19 @@
+---
+layout: default
+title: Contact
+permalink: /contact/
+description: Get in touch with Rami Mustafa.
+---
+<section class="page-head">
+  <h1>Contact</h1>
+  <p class="sub">Have a project, a question, or feedback on something I’ve built? Send a message and I’ll reply within a few days. You can also email <a href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+  <form action="{{ site.contact_form_action }}" method="post" class="stack-form">
+    <label for="c-name">Name</label>
+    <input id="c-name" name="name" type="text" required autocomplete="name">
+    <label for="c-email">Email</label>
+    <input id="c-email" name="email" type="email" required autocomplete="email">
+    <label for="c-msg">Message</label>
+    <textarea id="c-msg" name="message" rows="6" required></textarea>
+    <button type="submit">Send message</button>
+  </form>
+</section>

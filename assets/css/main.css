@@ -1,0 +1,59 @@
+:root{--bg:#F2F4F7;--ink:#101828;--muted:#566074;--line:#D3D9E3;--accent:#2B4EFF;--accent-ink:#fff;
+--display:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;--text:"Source Serif 4",Georgia,serif}
+@media (prefers-color-scheme:dark){:root{--bg:#0F1420;--ink:#EEF1F7;--muted:#9AA4B8;--line:#26304A;--accent:#8AA2FF;--accent-ink:#0F1420}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.125rem/1.65 var(--text);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+.wrap{max-width:760px;margin:0 auto;padding:0 24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;font:500 1rem var(--display)}
+nav .links{display:flex;gap:24px}
+nav a{text-decoration:none}
+nav a:hover,nav a[aria-current]{text-decoration:underline;text-underline-offset:5px}
+h1,h2{font-family:var(--display);letter-spacing:-.03em;line-height:1.05;margin:0}
+h1{font-size:clamp(2.25rem,7vw,3.5rem);font-weight:700;margin-bottom:16px}
+h2{font-size:1.5rem;font-weight:700;letter-spacing:-.01em;line-height:1.2;margin-bottom:8px}
+.hero{padding:56px 0 48px}
+.hero h1{font-size:clamp(2.75rem,9vw,5.25rem);line-height:.98;letter-spacing:-.035em;margin-bottom:28px}
+.hero p{max-width:34em;font-size:1.25rem;margin:0 0 24px}
+section{padding:24px 0 48px}
+.page-head{padding-top:32px}
+.sub{color:var(--muted);margin:0 0 28px;max-width:36em}
+.more{margin-top:16px;font:500 1rem var(--display)}
+.cta,button{display:inline-block;background:var(--accent);color:var(--accent-ink);padding:14px 26px;border:0;border-radius:999px;font:700 1.05rem var(--display);text-decoration:none;cursor:pointer}
+.cta:hover,button:hover{filter:brightness(1.1)}
+.products,.posts{list-style:none;margin:0;padding:0}
+.products{border-top:1px solid var(--line)}
+.product a{display:grid;grid-template-columns:1fr auto;gap:6px 24px;padding:28px 0;border-bottom:1px solid var(--line);text-decoration:none;transition:padding .2s}
+.product a:hover{padding-left:14px;padding-right:14px;background:var(--ink);color:var(--bg)}
+.product a:hover .desc,.product a:hover .tag{color:inherit;opacity:.85}
+.product .name{font:700 clamp(1.75rem,5vw,2.5rem)/1.1 var(--display);letter-spacing:-.025em}
+.tag{font:500 .9rem var(--display);color:var(--accent);align-self:center;white-space:nowrap}
+.product .desc{grid-column:1/-1;color:var(--muted);max-width:36em}
+.posts li{display:grid;grid-template-columns:8.5rem 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.posts li:last-child{border-bottom:1px solid var(--line)}
+.posts time{color:var(--muted);font:500 .95rem/1.9 var(--display)}
+.posts a{text-decoration:none;font-weight:600}
+.posts a:hover{color:var(--accent);text-decoration:underline;text-underline-offset:4px}
+.back{font:500 .95rem var(--display);margin:16px 0 32px}
+.lede{font-size:1.3rem;max-width:34em;margin:0 0 16px}
+.meta{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted);font:500 .95rem var(--display);margin:0 0 24px}
+.prose{padding:32px 0 24px;max-width:40em}
+.prose h2{margin-top:2em}
+.prose pre{overflow-x:auto;padding:16px;border:1px solid var(--line);border-radius:8px;font-size:.9rem}
+.prose img{max-width:100%;height:auto}
+.prose code{font-size:.9em}
+.newsletter{margin:32px 0;padding:40px 0;border-top:1px solid var(--line)}
+.newsletter p{color:var(--muted);margin:0 0 20px}
+input,textarea{font:inherit;padding:12px 16px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--ink);width:100%}
+.inline-form{display:flex;gap:10px;flex-wrap:wrap}
+.inline-form input{flex:1 1 240px;width:auto}
+.stack-form{display:grid;gap:8px;max-width:520px}
+.stack-form label{font:500 .95rem var(--display);margin-top:8px}
+.stack-form button{justify-self:start;margin-top:16px}
+footer{padding:28px 0 56px;border-top:1px solid var(--line);color:var(--muted);font:500 .9rem var(--display);display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+.flinks{display:flex;gap:18px}
+@media (max-width:560px){.posts li{grid-template-columns:1fr;gap:0}.hero{padding-top:32px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
